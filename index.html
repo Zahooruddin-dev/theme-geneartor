@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Theme Color Scheme</title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Side color picker -->
+    <div class="side-bar">
+        <input type="color" id="color-input" value="#0047AB" class="color-picker-box" title="Select Color">
+        <div id="selected-color" class="color-picker-box" title="Click to change color"></div>
+    </div>
+
+    <!-- Nav bar and scheme selection -->
+    <div>
+        <div class="nav-bar">
+            <select class="dropdown" id="scheme-type">
+                <option value="monochrome">Monochrome</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="get-scheme-btn" onclick="copySchemeToClipboard()">Copy Color Scheme</button>
+        </div>
+
+        <!-- Color scheme preview -->
+        <div class="color-scheme" id="color-scheme">
+            <!-- Colors will be displayed here -->
+        </div>
+    </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
